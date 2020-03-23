@@ -11,6 +11,6 @@
   <% months = %w(January February March April May June July August September October November December) %>
   <% currentTime = Time.now %>
   <%= days[currentTime.wday] + ', ' + months[currentTime.month - 1] + ' ' + format('%02d', currentTime.mday) + ', ' + currentTime.year.to_s %>
-  .</p>
+  </p>
 </body>
 </html>
