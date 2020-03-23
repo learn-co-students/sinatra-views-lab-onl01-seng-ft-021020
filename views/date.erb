@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Today</h1>
+        <% weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] %>
+        <% months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] %>
+        <% d = Time.now %>
+        <p><%= "The date is #{weekdays[d.wday]}, #{months[d.month - 1]} #{d.mday}, #{d.year}" %></p>
+    </body>
+</html>
